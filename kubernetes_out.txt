@@ -1,0 +1,31 @@
+voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./make_prediction.sh 
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
+--------------------------------------------------------------------------------------------------------------
+
+(.devops) voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./run_kubernetes.sh                               
+Authenticating with existing credentials...
+WARNING! Your password will be stored unencrypted in /home/ec2-user/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+pod/udacity-project4 created
+waiting 90 seconds for pods to start 
+NAMESPACE     NAME                               READY   STATUS    RESTARTS      AGE
+default       udacity-project4                   1/1     Running   0             16s
+kube-system   coredns-565d847f94-ff4jl           1/1     Running   0             48m
+kube-system   etcd-minikube                      1/1     Running   0             48m
+kube-system   kube-apiserver-minikube            1/1     Running   0             48m
+kube-system   kube-controller-manager-minikube   1/1     Running   0             48m
+kube-system   kube-proxy-57b7q                   1/1     Running   0             48m
+kube-system   kube-scheduler-minikube            1/1     Running   0             48m
+kube-system   storage-provisioner                1/1     Running   1 (47m ago)   48m
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
