@@ -2,11 +2,11 @@
 
 ## Complete the following steps to get Docker running locally
 
-# Step 1:
-# Build image and add a descriptive tag
+# Build continer image fro Dockerfile
+docker build --tag module4_project .
 
-# Step 2: 
-# List docker images
+# List local docker images
+docker image ls
 
-# Step 3: 
-# Run flask app
+# Start the container \ application
+docker run --name module4_project -d -p 8000:80 module4_project

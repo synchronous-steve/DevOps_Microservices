@@ -2,12 +2,14 @@
 
 # This tags and uploads an image to Docker Hub
 
-# Step 1:
-# This is your Docker ID/path
-# dockerpath=<>
+# Docker ID/path
+dockerpath=steveb84101/udacity-project4
 
-# Step 2
-# Run the Docker Hub container with kubernetes
+# Run container image in kubernetes
+docker login
+
+kubectl run udacity-project4 --image="$dockerpath" --port=80 
+
 
 
 # Step 3:
